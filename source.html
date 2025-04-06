@@ -1,177 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Gourmet Grove</title>
-    <style>
-      body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #fdf8f3;
-        color: #333;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amore Cucina</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fdf8f3;
+      color: #2d2e2e;
+    }
 
-      header {
-        text-align: center;
-        background-color: #d3a561;
-        padding: 1em;
-      }
+    header {
+      background-color: #121926;
+      color: #907f50;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
 
-      #header-img {
-        width: 100%;
-        max-height: 300px;
-        object-fit: cover;
-        border-bottom: 5px solid #b98b42;
-      }
+    header h1 {
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+      margin: 0;
+    }
 
-      nav {
-        margin-top: 1em;
-      }
+    header p.slogan {
+      font-family: 'Maitree', serif;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #645a40;
+    }
 
-      nav a {
-        margin: 0 1em;
-        text-decoration: none;
-        font-weight: bold;
-        color: #5c3d0d;
-      }
+    nav {
+      margin-top: 1.5rem;
+    }
 
-      main {
-        padding: 2em;
-      }
+    nav a {
+      color: #907f50;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
 
-      section {
-        margin-bottom: 3em;
-      }
+    #header-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
 
-      h1, h2, h3 {
-        color: #5c3d0d;
-      }
+    main {
+      padding: 2rem;
+    }
 
-      article {
-        margin-bottom: 2em;
-        background-color: #fff8ec;
-        padding: 1em;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      }
+    h2, h3 {
+      color: #645a40;
+    }
 
-      article img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px;
-      }
+    section {
+      margin-bottom: 3rem;
+    }
 
-      form {
-        background-color: #fff;
-        padding: 2em;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-      }
+    article {
+      background-color: #fff8ec;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
 
-      label {
-        display: block;
-        margin-top: 1em;
-        font-weight: bold;
-      }
+    article img {
+      width: 100%;
+      border-radius: 5px;
+      height: auto;
+    }
 
-      input[type="number"],
-      textarea {
-        width: 100%;
-        padding: 0.5em;
-        margin-top: 0.5em;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-      }
+    form {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
 
-      input[type="submit"] {
-        margin-top: 1.5em;
-        padding: 0.75em 2em;
-        background-color: #d3a561;
-        border: none;
-        border-radius: 5px;
-        color: white;
-        font-size: 1em;
-        cursor: pointer;
-      }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
 
-      footer {
-        text-align: center;
-        padding: 1em;
-        background-color: #f1e0c5;
-        border-top: 2px solid #d3a561;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <img id="header-img" src="restaurant-banner.jpg" alt="The Gourmet Grove restaurant banner" />
-      <h1>The Gourmet Grove</h1>
-      <nav>
-        <a href="#menu">Menu</a>
-        <a href="#order-form">Place Your Order</a>
-      </nav>
-    </header>
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
 
-    <main>
-      <section id="menu">
-        <h2>Menu</h2>
+    input[type="submit"] {
+      margin-top: 1.5rem;
+      padding: 0.75rem 2rem;
+      background-color: #907f50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
 
-        <article>
-          <img src="bruschetta.jpg" alt="Bruschetta" />
-          <h3>Classic Bruschetta</h3>
-          <p>Crispy toasted bread topped with a blend of tomatoes, basil, and garlic. <i>$7.99</i></p>
-        </article>
+    footer {
+      text-align: center;
+      background-color: #121926;
+      color: #907f50;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Amore Cucina</h1>
+    <p class="slogan">Savor the Taste of Love</p>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#order">Place Your Order</a>
+    </nav>
+  </header>
 
-        <article>
-          <img src="ravioli.jpg" alt="Spinach Ricotta Ravioli" />
-          <h3>Spinach Ricotta Ravioli</h3>
-          <p>Handmade ravioli filled with spinach and creamy ricotta, served in a sage butter sauce. <i>$14.50</i></p>
-        </article>
+  <img id="header-img" src="restaurant-banner.jpg" alt="Amore Cucina banner" />
 
-        <article>
-          <img src="cheesecake.jpg" alt="New York Cheesecake" />
-          <h3>New York Cheesecake</h3>
-          <p>Rich and creamy cheesecake on a graham cracker crust, topped with berry compote. <i>$6.25</i></p>
-        </article>
-      </section>
+  <main>
+    <section id="menu">
+      <h2>Menu</h2>
 
-      <section id="order-form">
-        <h2>Place Your Order</h2>
+      <article>
+        <img src="bruschetta.jpg" alt="Bruschetta" />
+        <h3>Classic Bruschetta</h3>
+        <p>Toasted bread topped with marinated tomatoes and fresh basil. <i>$7.99</i></p>
+      </article>
 
-        <form action="#" method="post">
-          <label for="bruschetta-qty">Classic Bruschetta (Qty):</label>
-          <input type="number" id="bruschetta-qty" name="bruschetta-qty" min="0" />
+      <article>
+        <img src="ravioli.jpg" alt="Ravioli" />
+        <h3>Spinach Ricotta Ravioli</h3>
+        <p>Handmade pasta filled with spinach and ricotta, served with sage butter. <i>$14.50</i></p>
+      </article>
 
-          <label for="ravioli-qty">Spinach Ricotta Ravioli (Qty):</label>
-          <input type="number" id="ravioli-qty" name="ravioli-qty" min="0" />
+      <article>
+        <img src="cheesecake.jpg" alt="Cheesecake" />
+        <h3>New York Cheesecake</h3>
+        <p>Rich, creamy cheesecake topped with a fresh berry compote. <i>$6.25</i></p>
+      </article>
+    </section>
 
-          <label for="cheesecake-qty">New York Cheesecake (Qty):</label>
-          <input type="number" id="cheesecake-qty" name="cheesecake-qty" min="0" />
+    <section id="order">
+      <h2>Place Your Order</h2>
+      <form>
+        <label for="bruschetta">Bruschetta (Qty):</label>
+        <input type="number" id="bruschetta" name="bruschetta" min="0" />
 
-          <label>Choose a Side:</label>
-          <input type="radio" id="salad" name="side" value="salad" />
-          <label for="salad">Side Salad</label>
-          <input type="radio" id="fries" name="side" value="fries" />
+        <label for="ravioli">Ravioli (Qty):</label>
+        <input type="number" id="ravioli" name="ravioli" min="0" />
+
+        <label for="cheesecake">Cheesecake (Qty):</label>
+        <input type="number" id="cheesecake" name="cheesecake" min="0" />
+
+
+        <label>Choose a Side:</label><br>
+
+        <div style="margin: 0.5em 0;">
+          <input type="radio" id="salad" name="side" value="Salad">
+          <label for="salad">Salad</label>
+        </div>
+        
+        <div style="margin: 0.5em 0;">
+          <input type="radio" id="fries" name="side" value="Fries">
           <label for="fries">Fries</label>
+        </div>
+        
 
-          <label>Extras:</label>
-          <input type="checkbox" id="extra-bread" name="extras" value="bread" />
-          <label for="extra-bread">Extra Bread</label>
-          <input type="checkbox" id="extra-sauce" name="extras" value="sauce" />
-          <label for="extra-sauce">Extra Sauce</label>
+        <label>Extras:</label><br>
+        <input type="checkbox" id="bread" name="extras" value="Extra Bread" />
+        <label for="bread">Extra Bread</label>
+        <input type="checkbox" id="sauce" name="extras" value="Extra Sauce" />
+        <label for="sauce">Extra Sauce</label>
 
-          <label for="requests">Special Requests:</label>
-          <textarea id="requests" name="requests" rows="4" placeholder="Allergies, spice level, no onions, etc."></textarea>
+        <label for="requests">Special Requests:</label>
+        <textarea id="requests" name="requests" rows="4" placeholder="Allergies, spice level, etc."></textarea>
 
-          <input type="submit" value="Go To Checkout" />
-        </form>
-      </section>
-    </main>
+        <input type="submit" value="Go To Checkout" />
+      </form>
+    </section>
+  </main>
 
-    <footer>
-      <p>Made with love by @your_codedex_username</p>
-    </footer>
-  </body>
+  <footer>
+    <p>Made with love by @dharunvj2005</p>
+  </footer>
+</body>
 </html>
+
