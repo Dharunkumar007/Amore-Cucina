@@ -25,13 +25,6 @@
       margin: 0;
     }
 
-    header p.slogan {
-      font-family: 'Maitree', serif;
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-      color: #645a40;
-    }
-
     nav {
       margin-top: 1.5rem;
     }
@@ -44,10 +37,11 @@
     }
 
     #header-img {
-      width: 100%;
+      width: 50%;
       height: 300px;
       object-fit: cover;
       display: block;
+      margin: 0 auto;
     }
 
     main {
@@ -71,9 +65,10 @@
     }
 
     article img {
-      width: 100%;
+      width: 30%; /* Ensures images take up 100% of their container */
+      height: 200px; /* Set a fixed height for all images */
+      object-fit: cover; /* Ensures the images cover the area without distortion */
       border-radius: 5px;
-      height: auto;
     }
 
     form {
@@ -115,74 +110,162 @@
       color: #907f50;
       padding: 1rem;
     }
+
+    .radio-option {
+      margin: 0.3em 0;
+      display: flex;
+      align-items: center;
+      gap: 0.1em;
+      font-size: 1.1rem;
+      font-family: 'Georgia', serif;
+      color: #2d2e2e;
+    }
+
+    .radio-option input[type="radio"] {
+      transform: scale(1.2);
+      accent-color: #907f50; 
+    }
+
+    .checkbox-option {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.3rem;
+      gap: 0.5rem;
+    }
+
+    .checkbox-option input[type="checkbox"] {
+      width: 13px;
+      height: 13px;
+      accent-color: #907f50;
+      cursor: pointer;
+    }
+
+    .checkbox-option label {
+      font-size: 1.1rem;
+      font-family: 'Georgia', serif;
+      color: #2d2e2e;
+    }
+
+    @media (max-width: 768px) {
+      #header-img {
+        width: 100%;
+        height: auto;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
-    <h1>Amore Cucina</h1>
-    <p class="slogan">Savor the Taste of Love</p>
+    <h1><img id="header-img" src="amore_cucina_logo.png" alt="Amore Cucina banner" /></h1>
     <nav>
       <a href="#menu">Menu</a>
       <a href="#order">Place Your Order</a>
     </nav>
   </header>
 
-  <img id="header-img" src="restaurant-banner.jpg" alt="Amore Cucina banner" />
-
   <main>
     <section id="menu">
       <h2>Menu</h2>
 
       <article>
-        <img src="bruschetta.jpg" alt="Bruschetta" />
+        <img src="Bruschetta.jpeg" alt="Bruschetta" />
         <h3>Classic Bruschetta</h3>
         <p>Toasted bread topped with marinated tomatoes and fresh basil. <i>$7.99</i></p>
       </article>
 
       <article>
-        <img src="ravioli.jpg" alt="Ravioli" />
+        <img src="Ravioli.jpg" alt="Ravioli" />
         <h3>Spinach Ricotta Ravioli</h3>
         <p>Handmade pasta filled with spinach and ricotta, served with sage butter. <i>$14.50</i></p>
       </article>
 
       <article>
-        <img src="cheesecake.jpg" alt="Cheesecake" />
+        <img src="New York Cheesecake.jpeg" alt="Cheesecake" />
         <h3>New York Cheesecake</h3>
         <p>Rich, creamy cheesecake topped with a fresh berry compote. <i>$6.25</i></p>
+      </article>
+
+      <article>
+        <img src="Lasagna.jpeg" alt="Lasagna" />
+        <h3>Classic Beef Lasagna</h3>
+        <p>Layers of pasta, rich meat sauce, and creamy béchamel. <i>$13.75</i></p>
+      </article>
+    
+      <article>
+        <img src="Tiramisu.jpeg" alt="Tiramisu" />
+        <h3>Tiramisu</h3>
+        <p>A luscious Italian dessert with layers of coffee-soaked ladyfingers and mascarpone. <i>$7.50</i></p>
+      </article>
+
+      <article>
+        <img src="Caprese Salad.jpeg" alt="Caprese Salad" />
+        <h3>Caprese Salad</h3>
+        <p>Fresh mozzarella, juicy tomatoes, and basil drizzled with balsamic glaze. <i>$8.50</i></p>
+      </article>
+      
+      <article>
+        <img src="Carbonara.jpeg" alt="Spaghetti Carbonara" />
+        <h3>Spaghetti Carbonara</h3>
+        <p>Spaghetti tossed with pancetta, egg, parmesan, and black pepper. <i>$12.95</i></p>
+      </article>
+      
+      <article>
+        <img src="Margherita Pizza.jpeg" alt="Margherita Pizza" />
+        <h3>Margherita Pizza</h3>
+        <p>Wood-fired pizza with fresh tomatoes, mozzarella, and basil. <i>$11.99</i></p>
       </article>
     </section>
 
     <section id="order">
       <h2>Place Your Order</h2>
       <form>
+        <label for="caprese">Caprese Salad (Qty):</label>
+        <input type="number" id="caprese" name="caprese" min="0" />
+      
+        <label for="carbonara">Spaghetti Carbonara (Qty):</label>
+        <input type="number" id="carbonara" name="carbonara" min="0" />
+      
+        <label for="margherita">Margherita Pizza (Qty):</label>
+        <input type="number" id="margherita" name="margherita" min="0" />
+      
+        <label for="lasagna">Classic Beef Lasagna (Qty):</label>
+        <input type="number" id="lasagna" name="lasagna" min="0" />
+      
+        <label for="tiramisu">Tiramisu (Qty):</label>
+        <input type="number" id="tiramisu" name="tiramisu" min="0" />
+      
         <label for="bruschetta">Bruschetta (Qty):</label>
         <input type="number" id="bruschetta" name="bruschetta" min="0" />
-
+      
         <label for="ravioli">Ravioli (Qty):</label>
         <input type="number" id="ravioli" name="ravioli" min="0" />
-
+      
         <label for="cheesecake">Cheesecake (Qty):</label>
         <input type="number" id="cheesecake" name="cheesecake" min="0" />
-
-
+      
         <label>Choose a Side:</label><br>
 
-        <div style="margin: 0.5em 0;">
+        <div class="radio-option">
           <input type="radio" id="salad" name="side" value="Salad">
-          <label for="salad">Salad</label>
+          <label for="salad">🥗 Salad</label>
         </div>
         
-        <div style="margin: 0.5em 0;">
+        <div class="radio-option">
           <input type="radio" id="fries" name="side" value="Fries">
-          <label for="fries">Fries</label>
+          <label for="fries">🍟 Fries</label>
         </div>
-        
 
         <label>Extras:</label><br>
-        <input type="checkbox" id="bread" name="extras" value="Extra Bread" />
-        <label for="bread">Extra Bread</label>
-        <input type="checkbox" id="sauce" name="extras" value="Extra Sauce" />
-        <label for="sauce">Extra Sauce</label>
+        <div class="checkbox-option">
+          <input type="checkbox" id="bread" name="extras" value="Extra Bread" />
+          <label for="bread">🍞 Extra Bread</label>
+        </div>
+
+        <div class="checkbox-option">
+          <input type="checkbox" id="sauce" name="extras" value="Extra Sauce" />
+          <label for="sauce">🥫 Extra Sauce</label>
+        </div>
 
         <label for="requests">Special Requests:</label>
         <textarea id="requests" name="requests" rows="4" placeholder="Allergies, spice level, etc."></textarea>
